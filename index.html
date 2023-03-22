@@ -1,58 +1,87 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- what are the risks with adding á and ä? -->
     <title>Krisztian Hofstadter</title>
-    <style type="text/css">body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2}</style>
+
+    <!-- add the font files to repo instead linking to Google? -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    
+
+    <!-- this will go in a stylesheet file later used by all pages/posts -->
+    <style type="text/css">
+        body {
+            margin: 40px auto;
+            max-width: 650px;
+            background-color: #ececcf;
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+            padding: 0 10px
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2
+        }
+
+        .dark-mode {
+            background-color: #444;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <!-- does the navigation element come here? -->
 
-        <h1>Krisztián Hofstädter</h1> <!-- is it a problem to have characters `á` and `ä` ?-->
+        <!-- three options? -->
+        <nav><button onclick="contrast()">dark/light</button></nav>
+
+        <!-- is it a problem to have characters `á` and `ä` ?-->
+        <h1>Dr Krisztián Hofstädter</h1>
 
         <blockquote cite="https://tedor.bandcamp.com/track/find-me">
-                    The highest forms of art are those which impose a kind of harmony and order on the greatest possible number of factors. ~ Aldous Huxley
-                    </blockquote> <!-- find original source and double check quote -->
-                    <!-- randomize quotes from a database -->
-                    <!-- can footnotes for source be added from this database? -->
+            The highest forms of art are those which impose a kind of harmony and order on the greatest possible number
+            of factors. ~ Aldous Huxley
+        </blockquote> <!-- find original source and double check quote; randomize quotes from a database; how could footnotes be used with the randomized quotes? -->
     </header>
-        
-        <h2>Introduction</h2>
-        
-        <p>Hi, this is me and this is what I am doing now: </p>
-        
-        <ul>
-            <li>This</li>
-            <li>That</li>
-            <li>And that</li>
-        </ul>
 
-        <p>This is what I did earlier: </p>
-        
-        <ul>
-            <li>This</li>
-            <li>That</li>
-            <li>And that</li>
-        </ul>
-    
-    <!-- do I add the Google Analytics script here or somewhere else? -->
-    
+    <h2>Introduction</h2>
+
+    <p>Hi, this is me and this is what I am doing now: </p>
+
+    <ul>
+        <li>This</li>
+        <li>That</li>
+        <li>And that</li>
+    </ul>
+
+    <p>This is what I did earlier: </p>
+
+    <ul>
+        <li>This</li>
+        <li>That</li>
+        <li>And that</li>
+    </ul>
+
+    <!-- do I add the Google Analytics script here or somewhere else? Is there anyting better, more ethical than GA? -->
+
+    <script>
+        function contrast() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
 </body>
+
 </html>
-
-<!-- 
-## to-do
-- add three colour contrast to choose from to navigation (or somewhere else - maybe top right corner of screen?)
-
-## log
-2023-03-17 inspired by http://bettermotherfuckingwebsite.com/, I set up the  HTML core of index page
-
-## resources
--  https://stackoverflow.com/questions/4781077/html5-best-practices-section-header-aside-article-elements/26695892#26695892
-
-
--->
