@@ -4,84 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- what are the risks with adding á and ä? -->
-    <title>Krisztian Hofstadter</title>
-
     <!-- add the font files to repo instead linking to Google? -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
-    
-
-    <!-- this will go in a stylesheet file later used by all pages/posts -->
-    <style type="text/css">
-        body {
-            margin: 40px auto;
-            max-width: 650px;
-            background-color: #ececcf;
-            font-family: 'Atkinson Hyperlegible', sans-serif;
-            font-size: 18px;
-            color: #444;
-            line-height: 1.6;
-            padding: 0 10px
-        }
-
-        h1,
-        h2,
-        h3 {
-            line-height: 1.2
-        }
-
-        .dark-mode {
-            background-color: #444;
-            color: white;
-        }
-    </style>
+    <meta name="description" content="This will be interesting."> <!-- #todo -->
+    <!-- what are the risks with adding á and ä? -->
+    <title>The Website Of Krisztián Hofstädter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <h1>Website Of Krisztián Hofstädter</h1>
 </head>
 
 <body>
     <header>
-
-        <!-- three options? -->
-        <nav><button onclick="contrast()">dark/light</button></nav>
-
-        <!-- is it a problem to have characters `á` and `ä` ?-->
-        <h1>Dr Krisztián Hofstädter</h1>
-
-        <blockquote cite="https://tedor.bandcamp.com/track/find-me">
-            The highest forms of art are those which impose a kind of harmony and order on the greatest possible number
-            of factors. ~ Aldous Huxley
-        </blockquote> <!-- find original source and double check quote; randomize quotes from a database; how could footnotes be used with the randomized quotes? -->
+        <nav>
+            <button onclick="contrast()" title="Daylight is mine to command!">light/dark</button>
+        </nav>
     </header>
-
-    <h2>Introduction</h2>
-
-    <p>Hi, this is me and this is what I am doing now: </p>
-
-    <ul>
-        <li>This</li>
-        <li>That</li>
-        <li>And that</li>
-    </ul>
-
-    <p>This is what I did earlier: </p>
-
-    <ul>
-        <li>This</li>
-        <li>That</li>
-        <li>And that</li>
-    </ul>
-
-    <!-- do I add the Google Analytics script here or somewhere else? Is there anyting better, more ethical than GA? -->
-
+    <p>Hey there! I’m a Hungarian interdisciplinary researcher living in England. While my main focus is on using sound to induce and maintain altered states of consciousness, I am interested in many other things too e.g. in developing my personal knowledge management and keeping myself and my family healthy.</p>
+    <br>
+    <h2>Now</h2>
+    <p>I work on the Enhancing Audio Description II project as a postdoc at the University of York, teach the Navigating the Digital World module as a part-time lecturer at the University of Essex and develop chapter of doctoral thesis into research papers for relevant journals as an independent researcher. In am also personalizing the zettlekasten method in Visual Studio Code using Foam and redesigning my old website to better archive my work. 
+    </p>
+    <br>
+    <h2>Some Past Works</h2>
+    <p> Most of my music can be found on Bandcamp, some videos on YouTube and a recent academic CV here.</p>
+    <br>
     <script>
         function contrast() {
             var element = document.body;
-            element.classList.toggle("dark-mode");
+            element.classList.toggle("light-mode");
         }
     </script>
-
 </body>
 
 </html>

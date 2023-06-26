@@ -1,0 +1,31 @@
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  background-color: black;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 18px;
+  color: rgb(223, 223, 223);
+  line-height: 1.6;
+  padding: 0 10px
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2
+}
+
+a {
+  color: #226ebf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.light-mode {
+  background-color: #ececcf;
+  color: #2b2b2b;
+}
