@@ -1,4 +1,4 @@
-# kriskhofstadter.com
+# krishofstadter.com
 
 ## to-do
 
