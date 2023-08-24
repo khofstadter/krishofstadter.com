@@ -10,6 +10,7 @@
   - YouTube
 - publish site, redirect khofstadter.com to krishofstadter.com
 - start new email address (forward from old)
+- add: https://www.york.ac.uk/arts-creative-technologies/about/events/music/mcc-week-7-autumn-2022/
 
 ## log
 - 2023-06-26 realized after running, that I should start writing publicly instead of in my notebooks only. Maybe having Journeys Around The Secret Place published is the new beginning which brought momentum. I simplified the page and plan to gradually add to it. 
