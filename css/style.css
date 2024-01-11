@@ -54,6 +54,13 @@ a:hover {
     flex: 0 0 50%; /* On medium screens, we want the items to take up exactly 50% of the width */
   }
 }
+
+@media (max-width: 600px) {
+  header div {
+      flex-direction: column;
+  }
+}
+
 .snowflake {
   position: fixed;
   top: 0;
