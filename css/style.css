@@ -37,15 +37,23 @@ a:hover {
 }
 
 .flex-item {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   box-sizing: border-box;
-  flex: 1 0 21%; /* This will make the items take up at least 21% of the container width, and grow to fill available space. */
+  flex: 0 0 21%; /* This will make the items take up exactly 25% of the container width */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .flex-item { 
-    flex: 1 0 100%; /* On small screens, we want the items to stack vertically, taking up the full width */
+    flex: 0 0 33.33%; /* On medium-large screens, we want the items to take up exactly 33.33% of the width */
   }
 }
+
+@media screen and (max-width: 900px) {
+  .flex-item { 
+    flex: 0 0 50%; /* On medium screens, we want the items to take up exactly 50% of the width */
+  }
+}
+
+
 
